@@ -3,5 +3,19 @@
 {% block title %} Home {% endblock %}
 
 {% block content %}
- <h1>Welcome {{username}}</h1>
+
+<h1>IPL Ball by Ball data </h1>
+
+  <form action="#" method="post" >
+    <p>
+      Player Name:
+    </p>
+    <input type = "text" name="batter_name"  />
+    <p>
+      Overs less than:
+    </p>
+    <input type = "number" name ="overs"  />
+    <input type = "submit" name="submit"  />
+  </form>
+
 {% endblock %}

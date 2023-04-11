@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}Batter Data {% endblock %}
+
+{% block content %}
+  <table >
+    <thead>
+      <tr>
+        <th>
+          ID
+        </th>
+        <th>
+          Innings
+        </th>
+        <th>
+          Overs
+        </th>
+        <th>
+          Ball Number
+        </th>
+        <th>
+          Batter
+        </th>
+        <th>
+          Bowler
+        </th>
+        <th>
+          Non Striker
+        </th>
+        <th>
+          Extra Type
+        </th>
+        <th>
+          Batsman Run
+        </th>
+        <th>
+          Extras Run
+        </th>
+        <th>
+          Total Run
+        </th>
+        <th>
+          Non Boundary
+        </th>
+        <th>
+          Is Wicket Delivery
+        </th>
+        <th>
+          Player Out
+        </th>
+        <th>
+          Kind
+        </th>
+        <th>
+          Fielders Involved
+        </th>
+        <th>
+          Batting Team
+        </th>
+
+  </tr>
+
+  <tbody>
+
+  {% for data in batter_data %}
+
+
+      <tr>
+
+
+        <td>
+          {{data.id}}
+        </td>
+        <td>
+          {{data.innings}}
+        </td>
+        <td>
+          {{data.overs}}
+        </td>
+        <td>
+          {{data.ballnumber}}
+        </td>
+        <td>
+          {{data.batter}}
+        </td>
+        <td>
+          {{data.bowler}}
+        </td>
+        <td>
+          {{data.non_striker}}
+        </td>
+        <td>
+          {{data.extra_type}}
+        </td>
+        <td>
+          {{data.batsman_run}}
+        </td>
+        <td>
+          {{data.extras_run}}
+        </td>
+        <td>
+          {{data.total_run}}
+        </td>
+        <td>
+          {{data.non_boundary}}
+        </td>
+        <td>
+          {{data.is_wicket_delivery}}
+        </td>
+        <td>
+          {{data.player_out}}
+        </td>
+        <td>
+          {{data.kind}}
+        </td>
+        <td>
+          {{data.fielders_involved}}
+        </td>
+        <td>
+          {{data.batting_team}}
+        </td>
+      </tr>
+
+
+
+
+
+  {% endfor %}
+
+</tbody>
+
+</table>
+{% endblock %}
